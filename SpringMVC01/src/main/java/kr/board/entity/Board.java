@@ -1,6 +1,9 @@
 package kr.board.entity;
 
+import lombok.Data;
+
 //Lombok API (setter, getter 자동생성)
+@Data
 public class Board {
 	private int idx;	//번호
 	private String title; // 제목
@@ -10,5 +13,4 @@ public class Board {
 	private int count;		//조회수
 	
 	//setter, getter
-
 }
