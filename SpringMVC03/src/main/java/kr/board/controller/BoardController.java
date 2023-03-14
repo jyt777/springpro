@@ -23,9 +23,9 @@ public class BoardController {
 	@Autowired
 	BoardMapper boardMapper;
 
-	@RequestMapping("/")
+	@RequestMapping("/boardMain")
 	public String main() {
-		return "main";
+		return "board/main";
 	}
 
 //	// @ResponseBody -> jakson-databind에서 자동으로 객체를 json 데이터 포멧으로 변환 시켜준다

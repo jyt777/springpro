@@ -19,11 +19,11 @@ import kr.board.entity.Board;
 import kr.board.mapper.BoardMapper;
 
 @RequestMapping("/board")
-@RestController		//Ajax 통신할때 쓰는 어노테이션 : @ResponseBody 생략가능
+@RestController // Ajax 통신할때 쓰는 어노테이션 : @ResponseBody 생략가능
 public class BoardRestController {
-	@Autowired 
+	@Autowired
 	BoardMapper boardMapper;
-	
+
 	// @ResponseBody -> jakson-databind에서 자동으로 객체를 json 데이터 포멧으로 변환 시켜준다
 	@GetMapping("/all")
 	public List<Board> boardList() {
@@ -31,7 +31,7 @@ public class BoardRestController {
 		return list; // 객체 리턴이라는 말은 Json 데이터 형식으로 변환(API를 이용)해서 리턴하겠다는 의미.
 	}
 
-	//@RequestMapping("/boardInsert")
+	// @RequestMapping("/boardInsert")
 	@PostMapping("/new")
 	public void boardInsert(Board vo) {
 		boardMapper.boardInsert(vo);

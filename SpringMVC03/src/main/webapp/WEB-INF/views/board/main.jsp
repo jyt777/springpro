@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Spring MVC02</title>
+<title>Spring MVC03</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -164,6 +164,8 @@
 </head>
 <body>
 	<div class="container">
+	  <jsp:include page="../common/header.jsp"/>
+	  
 		<h2>Spring MVC02</h2>
 		<div class="panel panel-default">
 			<div class="panel-heading">BOARD</div>
